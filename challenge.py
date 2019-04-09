@@ -12,7 +12,7 @@ lista = [[2, 1, 1, 1, 1, 3],
 n_lins = len(lista)
 n_cols = len(lista[0])
 
-if n_lins >= 3:
+if n_lins >= 5:
     maior = lista [0] [0] * lista [0] [1] * lista [0] [2]
 else:
     maior = lista [0] [0] * lista [1] [0] * lista [2] [0]
@@ -24,7 +24,7 @@ for i0 in range(n_lins):
     for j0 in range(n_cols):
         for m, n in [(0, 1), (1, 0), (1, 1), (1, -1)]:
             produto = 1
-            for k in range(3):
+            for k in range(5):
                 if 0<= i0 + m*k < n_lins and 0 <= j0 + n*k < n_cols:
                     produto *= lista[i0 + m*k] [j0 + n*k]
                 else:
